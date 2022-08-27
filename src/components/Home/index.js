@@ -13,11 +13,11 @@ const Home = () =>
     const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
     const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
 
-    /* useEffect(() => {
-        return setTimeout(() => {
-                setLetterClass('text-animate-hover')
+    useEffect(() => {
+         setTimeout(() => {
+               return setLetterClass('text-animate-hover')
         },4000)
-    }, [])*/
+    }, [])
     return (
         <>
         <div className="container home-page">
@@ -40,7 +40,7 @@ const Home = () =>
                 <h2>Frontend developer / Javascript Moderator</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
-            <Logo />
+            {/* <Logo /> */}
         </div>
         <Loader type='pacman' />
         </>
